@@ -22,6 +22,10 @@ body {
     &.fp-viewing-2 {
         background-position: center 100%;
     }
+
+    &.fp-viewing-3 {
+        background-position: center 30%;
+    }
 }
 
 .one,
@@ -30,6 +34,11 @@ body {
 }
 
 .two {
+    background: linear-gradient(45deg, transparent 25%, $slideBg 25%, $slideBg 75%, transparent 75%, transparent 100%);
+    text-align: right;
+}
+
+.four {
     background: linear-gradient(45deg, transparent 25%, $slideBg 25%, $slideBg 75%, transparent 75%, transparent 100%);
     text-align: right;
 }
@@ -65,3 +74,6 @@ h2 {
         line-height: 1;
     }
 }
+
+
+/*이미지 배치*/
