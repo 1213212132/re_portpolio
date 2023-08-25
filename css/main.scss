@@ -1,0 +1,67 @@
+$easeInOutQuart: cubic-bezier(0.770, 0.000, 0.175, 1.000);
+$slideBg: rgba(0, 0, 0, 0.7);
+$text--primary: #fff;
+$body__bg: #000;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: $body__bg url(../images/y.jpg) no-repeat center 0% / cover;
+    transition: background-position .3s ease-in-out;
+
+    &.fp-viewing-0 {
+        background-position: center 0%;
+    }
+
+    &.fp-viewing-1 {
+        background-position: center 50%;
+    }
+
+    &.fp-viewing-2 {
+        background-position: center 100%;
+    }
+}
+
+.one,
+.three {
+    background: linear-gradient(-45deg, transparent 25%, $slideBg 25%, $slideBg 75%, transparent 75%, transparent 100%);
+}
+
+.two {
+    background: linear-gradient(45deg, transparent 25%, $slideBg 25%, $slideBg 75%, transparent 75%, transparent 100%);
+    text-align: right;
+}
+
+h1,
+h2 {
+    color: $text--primary;
+    font-family: 'Roboto', sans-serif;
+    font-size: 58px;
+    height: 64px;
+    line-height: 3.5;
+    max-width: 830px;
+    padding: 0 15px;
+    margin: 0 auto;
+    overflow: hidden;
+    transition: line-height .85s $easeInOutQuart;
+}
+
+h1 {
+    font-weight: 100;
+    transition-delay: .3s;
+}
+
+h2 {
+    font-weight: 300;
+    transition-delay: .8s;
+}
+
+.section.active {
+
+    h1,
+    h2 {
+        line-height: 1;
+    }
+}
