@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&display=swap');
 @import url('https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
 
 @font-face {
@@ -9,10 +9,8 @@
     font-style: normal;
 }
 
-
-
 body {
-    font-family: 'Roboto', 'Noto Sans KR', sans-serif, 'GmarketSansMedium';
+    font-family: 'Roboto', 'Noto Sans KR', sans-serif;
 }
 
 .blind {
@@ -24,21 +22,15 @@ body {
     overflow: hidden;
 }
 
-.dbg {
-    background: #f9f9f9;
-}
-
-.sec {
-    padding: 100px 0;
-}
-
 .inner {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 15px;
 }
 
-
+.sec {
+    padding: 100px 0;
+}
 
 .sec .tit {
     max-width: 1200px;
@@ -46,12 +38,11 @@ body {
     padding: 0 15px;
 }
 
+.bg {
+    background: #f9f9f9;
+}
+
 p {
     font-size: 16px;
     line-height: 20px;
-}
-
-em,
-address {
-    font-style: normal;
 }
