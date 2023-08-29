@@ -3,6 +3,10 @@
   box-sizing: border-box;
 }
 
+.wrap {
+  font-family: "Pretendard-Regular";
+}
+
 body {
   background: #000 url(../images/blue.bg.jpg) no-repeat center 0%/cover;
   transition: background-position 0.3s ease-in-out;
@@ -24,9 +28,10 @@ body.fp-viewing-3 {
 nav {
   position: fixed;
   top: 50%;
-  left: 2rem;
+  right: 2rem;
   transform: translateY(-50%);
   z-index: 999;
+  font-size: 0;
 }
 
 nav li {
@@ -609,13 +614,13 @@ h2 {
   border: 1px solid rgba(255, 255, 255, 0.125);
 }
 
-#section4 .c_5 {
+#section4 .content {
   position: absolute;
   top: 290px;
   left: 310px;
 }
 
-#section4 .c_5 > strong {
+#section4 .content > strong {
   font-size: 60px;
   position: absolute;
   width: 500px;
@@ -623,29 +628,21 @@ h2 {
   color: rgba(6, 140, 250, 0.822);
 }
 
-#section4 .c_5 h3 {
+#section4 .content h3 {
   color: #000;
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 700;
   padding: 20px 0 0 0;
+  margin-bottom: 15px;
 }
 
-#section4 .c_5 h3:nth-of-type(1)::after {
-  content: "";
-  display: block;
-  width: 30px;
-  border-bottom: 2px solid #333;
-  margin: 25px 0 40px 0;
-}
-
-#section4 .c_5 > span {
+#section4 .content span {
   line-height: 40px;
 }
 
-#section4 .c_5 > p {
+#section4 .content p {
   font-size: 15px;
   font-weight: 300;
-  padding-bottom: 25px;
 }
 
 #section4 .mac {
@@ -766,6 +763,65 @@ h2 {
     transform: translateY(0);
   }
 }
+#section4 .mac_3 {
+  position: absolute;
+  top: 170px;
+  right: 260px;
+  cursor: pointer;
+  z-index: 1;
+  width: 900px;
+}
+
+#section4 .mac_3 .mac2_2 {
+  position: absolute;
+  top: 5px;
+  width: 450px;
+  height: 600px;
+  background: #999;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#section4 .mac_3 .mac3_2 {
+  position: absolute;
+  top: 5px;
+  right: 40px;
+  height: 600px;
+  background: #999;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#section4 .mac_3 .mac2_2:hover img {
+  animation: linear mac2_2 10s infinite;
+}
+
+#section4 .mac_3 .mac3_2:hover img {
+  animation: linear mac3_2 30s infinite;
+}
+
+@keyframes mac2_2 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-410px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes mac3_2 {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-3800px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 #section4 .c_3 {
   position: absolute;
   top: 430px;
@@ -777,23 +833,22 @@ h2 {
   color: #333;
 }
 
+#section4 .c_3 span {
+  float: left;
+  display: block;
+  width: 200px;
+}
+
+#section4 .c_3 span:nth-of-type(2) {
+  float: left;
+  display: block;
+  float: left;
+  width: 150px;
+  height: 1px;
+  margin: 10px 0;
+  background: #888;
+}
+
 #section4 .c_3 span:nth-of-type(3) {
   float: right;
-}
-
-#section4 .btn {
-  position: absolute;
-  margin-top: 30px;
-  width: 100px;
-  transition: linear 0.4s;
-  z-index: 5;
-}
-
-#section4.on .btn {
-  left: 730px;
-}
-
-#section4 .btn span {
-  display: block;
-  padding: 5px 0;
 }/*# sourceMappingURL=main.css.map */

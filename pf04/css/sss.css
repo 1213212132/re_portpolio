@@ -1,0 +1,9 @@
+.box {
+    position: relative;
+}
+
+
+.itm {
+    height: 100px;
+    background: url(../img/visual_default.png)no-repeat center center/cover;
+}
