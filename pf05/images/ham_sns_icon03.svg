@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="42" height="42" viewBox="0 0 42 42">
+  <g id="sns_youtube" transform="translate(0 0.295)">
+    <circle id="box" cx="21" cy="21" r="21" transform="translate(0 -0.295)" fill="#999" opacity="0.13"/>
+    <path id="youtube_icon" d="M149.129,168.9H135.023A4.124,4.124,0,0,0,131,173.1v7.708a4.123,4.123,0,0,0,4.023,4.2h14.106a4.124,4.124,0,0,0,4.023-4.2V173.1A4.129,4.129,0,0,0,149.129,168.9ZM142.7,179.236l-3.438,2.221v-8.884l3.438,2.221,3.438,2.221Z" transform="translate(-121.222 -156.101)" fill="#999"/>
+  </g>
+</svg>
