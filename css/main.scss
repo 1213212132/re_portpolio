@@ -873,10 +873,12 @@ h2 {
 @keyframes move-forever {
     0% {
         transform: translate3d(-90px, 0, 0);
+        opacity: 0.3;
     }
 
     100% {
         transform: translate3d(85px, 0, 0);
+        opacity: 0.8;
     }
 }
 
@@ -1048,7 +1050,7 @@ h2 {
 
 #section4 .mac_2 {
     position: absolute;
-    top: 220px;
+    top: 290px;
     right: 200px;
     cursor: pointer;
     z-index: 1;
