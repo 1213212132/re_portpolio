@@ -36,16 +36,38 @@
 <body>
     <div class="wrap">
 
-        <main>
+        <header>
             <nav>
                 <ul>
-                    <li><a href="#intro"><span>메인</span></a></li>
-                    <li><a href="#pf01">포트폴리오</a></li>
-                    <li><a href="#pf02">실습</a></li>
-                    <li><a href="#profile">프로필</a></li>
-                    <li><a href="#introduce">자기소개</a></li>
+                    <li><a href="#intro"><span>인트로1</span></a></li>
+                    <li><a href="#pf01"><span>인트로2</span></a></li>
+                    <li><a href="#pf02"><span>인트로3</span></a></li>
+                    <li><a href="#profile"><span>포트폴리오</span></a></li>
+                    <li><a href="#introduce"><span>자기소개</span></a></li>
                 </ul>
             </nav>
+        </header>
+        <div class="util" aria-hidden="true">
+            <button class="menu">
+                <span>link</span>
+            </button>
+        </div>
+
+
+
+        <aside class="cover">
+            <ul>
+                <li><a href="#intro"><span>인트로1</span></a></li>
+                <li><a href="#pf01"><span>인트로2</span></a></li>
+                <li><a href="#pf02"><span>인트로3</span></a></li>
+                <li><a href="#profile"><span>포트폴리오</span></a></li>
+                <li><a href="#introduce"><span>자기소개</span></a></li>
+            </ul>
+        </aside>
+
+
+        <main>
+
             <div id="fullpage">
 
                 <div id="section1" class="section one">
@@ -466,6 +488,7 @@
                 <section id="section4" class="section section4 five">
                     <div class="swiper-container">
                         <div class="swiper-wrapper">
+
                             <div class="swiper-slide">
                                 <div class="box"></div>
 
@@ -473,15 +496,21 @@
 
                                     <strong>01.상상짬뽕</strong>
                                     <h3>"정성을 팔고 만족을 산다"</h3>
+                                    <span>Type</span>
+                                    <p>반응협 웹</p>
+
                                     <span>Info</span>
                                     <p>상상짬뽕을 클론 코딩을 하였습니다<br>
+                                        iframe을 사용하여 동영상을 삽입하였고 <br>
+                                        반응형을 구현하였습니다. <br>
+                                        원래사이트에 background-img가 너무 진해 <br> icon들이 영향을 받기 때문에 필터를 적용하여 <br> 연하게 하였습니다.
 
                                     </p>
 
 
                                     <span>Tool</span>
                                     <p>
-                                        Html , Css, JavaScript
+                                        Html , Css, JavaScript , slick
                                     </p>
 
 
@@ -499,6 +528,7 @@
                                 </div>
                                 <div class="mac">
                                     <div class="mac2">
+
                                         <a href="./pf01/index.html" target="_blank"><img src="./images/상상짬뽕.png"
                                                 alt="상상짬뽕"></a>
                                     </div>
@@ -508,10 +538,27 @@
                                                 src="./images/상상짬뽕mo.png" alt="상상짬뽕-mo"></a>
 
                                     </div>
+
+
                                 </div>
 
 
-
+                                <div>
+                                    <svg class="waves" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28"
+                                        preserveAspectRatio="none" shape-rendering="auto">
+                                        <defs>
+                                            <path id="gentle-wave"
+                                                d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                                        </defs>
+                                        <g class="parallax">
+                                            <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                                            <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                                            <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                                            <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+                                        </g>
+                                    </svg>
+                                </div>
 
                             </div>
                             <div class="swiper-slide">
@@ -521,9 +568,14 @@
                                     <strong>02.LH건설</strong>
 
                                     <h3>"여유로운 삶의 템포"</h3>
-                                    <span>Info</span>
-                                    <p>LH건설을 클론 코딩을 하면서<br>
+                                    <span>Type</span>
+                                    <p>반응형웹</p>
 
+                                    <span>Info</span>
+                                    <p>LH건설을 클론 코딩을 하였다.<br>
+                                        background-color를 다양하게 주어<br>
+                                        사용하였습니다. <br>
+                                        이미지 배치는 grid를 사용하여 구현하였습니다.
 
                                     </p>
 
@@ -559,7 +611,22 @@
 
                                     </div>
                                 </div>
-
+                                <div>
+                                    <svg class="waves" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28"
+                                        preserveAspectRatio="none" shape-rendering="auto">
+                                        <defs>
+                                            <path id="gentle-wave"
+                                                d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                                        </defs>
+                                        <g class="parallax">
+                                            <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                                            <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                                            <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                                            <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+                                        </g>
+                                    </svg>
+                                </div>
 
 
 
@@ -610,7 +677,22 @@
                                 </div>
 
 
-
+                                <div>
+                                    <svg class="waves" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28"
+                                        preserveAspectRatio="none" shape-rendering="auto">
+                                        <defs>
+                                            <path id="gentle-wave"
+                                                d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                                        </defs>
+                                        <g class="parallax">
+                                            <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                                            <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                                            <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                                            <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+                                        </g>
+                                    </svg>
+                                </div>
 
                             </div>
 
@@ -661,7 +743,22 @@
 
 
 
-
+                                <div>
+                                    <svg class="waves" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28"
+                                        preserveAspectRatio="none" shape-rendering="auto">
+                                        <defs>
+                                            <path id="gentle-wave"
+                                                d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                                        </defs>
+                                        <g class="parallax">
+                                            <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                                            <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                                            <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                                            <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+                                        </g>
+                                    </svg>
+                                </div>
                             </div>
 
                             <div class="swiper-slide">
@@ -709,7 +806,22 @@
                                     </div>
                                 </div>
 
-
+                                <div>
+                                    <svg class="waves" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28"
+                                        preserveAspectRatio="none" shape-rendering="auto">
+                                        <defs>
+                                            <path id="gentle-wave"
+                                                d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                                        </defs>
+                                        <g class="parallax">
+                                            <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                                            <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                                            <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                                            <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+                                        </g>
+                                    </svg>
+                                </div>
 
 
                             </div>
@@ -720,7 +832,7 @@
                                 <div class="content">
                                     <strong>06.부경대학교</strong>
 
-                                    <h3>"미래를 우리 손으로"</h3>
+                                    <h3>"과학을 문화로 만드는 곳"</h3>
                                     <span>Info</span>
                                     <p>Panstar을 클론 코딩을 하면서<br>
 
@@ -746,12 +858,12 @@
                                     </div>
 
                                 </div>
-                                <div class="mac_5">
-                                    <div class="mac2_4">
+                                <div class="mac_4">
+                                    <div class="mac2_3">
                                         <a href="./pf06/index.html" target="_blank"><img src="./images/부경대.jpeg"
                                                 alt="부경대"></a>
                                     </div>
-                                    <div class="mac3_4">
+                                    <div class="mac3_3">
                                         <a href="./pf06/index.html" target="_blank"
                                             onclick="window.open(this.href,'_blanck','width=390, height=900'); return false"><img
                                                 src="./images/부경대-mo.png" alt="부경대-mo "></a>
@@ -760,10 +872,26 @@
                                 </div>
 
 
-
+                                <div>
+                                    <svg class="waves" xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28"
+                                        preserveAspectRatio="none" shape-rendering="auto">
+                                        <defs>
+                                            <path id="gentle-wave"
+                                                d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+                                        </defs>
+                                        <g class="parallax">
+                                            <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                                            <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                                            <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                                            <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+                                        </g>
+                                    </svg>
+                                </div>
 
                             </div>
                         </div>
+
                         <!-- Add Pagination -->
                         <div class="swiper-pagination"></div>
                     </div>

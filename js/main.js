@@ -1,6 +1,27 @@
 $(function () {
 
 
+
+    const COVER_BTN = document.querySelector('.util');
+    const COVER = document.querySelector('.cover');
+    const COVER_A = document.querySelectorAll('.cover>ul a');
+
+
+    COVER_BTN.addEventListener('click', function (e) {
+        e.currentTarget.classList.toggle('on');
+        //this.classList.toggle('on');
+        COVER.classList.toggle('on');
+    });
+
+    COVER_A.forEach((lnk, idx) => {
+        lnk.addEventListener('click', () => {
+            COVER.classList.remove('on');
+            COVER_BTN.classList.remove('on');
+            console.log(idx);
+        });
+    });
+
+
     var $this = $(".section");
     var $this_s = $(".slide");
     $this.eq(0).addClass("on");
