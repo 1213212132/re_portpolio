@@ -4,29 +4,23 @@ $(function () {
     var $this = $(".section");
     var $this_s = $(".slide");
     $this.eq(0).addClass("on");
+    $('#fullpage').fullpage({
 
-    $("#fullpage").fullpage({
-
-        navigation: false,//네비게이션 유무
-        navigationPosition: "right",//네비게이션 위치
-        sectionsColor: [],//각 섹션 배경색, 배열의 형식
         anchors: ['intro', 'pf01', 'pf02', 'profile', 'introduce'],
-        showActiveTooltip: true,//네비게이션 선택 메뉴 활성화
+        menu: '#menu',
+        scrollingSpeed: 1000,
+        // scrollBar: true,
+        onLeave: function (origin, destination, direction) {
 
-        css3: false,
-        scrollOverflow: false, //line-height: 1에서 font-size가 box를 초과할 때 스크롤이 생기는 초기값을 false로 설정함.
-        //반응형에서 fullpage 안하기.
-        responsiveWidth: 700,
-        //넘치는 부분 스크롤 하기.
+            // 빠른전환으로 이벤트중복시 fullpage와 swiper전환시점 분리막기
+            $('#fullpage').on('scroll touchmove mousewheel', function (event) {
+                event.preventDefault();
+                event.stopPropagation();
+                return false;
+            });
+            swiper.mousewheel.disable();
+        },
 
-        afterRender: function () {
-            $('.section').eq(0).addClass('on');
-        },
-        afterLoad: function (lnk, idx) {
-            console.log(lnk, idx);
-            // $('.gnb li').eq(idx - 1).addClass('on').siblings().removeClass('on');
-            $('.section').eq(idx - 1).addClass('on').siblings().removeClass('on');
-        },
         onLeave: function (idx, nidx, dir) {
             $('nav li').eq(nidx - 1).addClass('on').siblings().removeClass('on');
             console.log(idx, nidx, dir);
@@ -37,11 +31,15 @@ $(function () {
                 $('.header').removeClass('on')
             }
 
+        },
+        afterLoad: function (anchorLink, index) {
+            // 전환이 끝난후 이벤트풀기                               
+            $('#fullpage').off('scroll mousewheel');
+            if (!$(".fp-completely .swiper-wrapper").length > 0) $('#fullpage').off('touchmove'); // 모바일분기
+            if (swiper) swiper.mousewheel.enable();
+            if (!$(".sec2").hasClass("active")) $.fn.fullpage.setAllowScrolling(true); // 슬라이드 섹션을 벗어나면 휠풀어주기
         }
-
-
     });
-
 
 
     var length = $(".section4 .swiper-slide").length;

@@ -112,7 +112,7 @@ nav li.on:after {
 
 /*물고기*/
 :root {
-    --coilSize: 14px;
+    --coilSize: 14\px;
     --delayCount: 40ms;
     --scaleMe: 1;
 
@@ -535,7 +535,7 @@ h2 {
 .bubbles-small {
     overflow: visible;
 
-    >g {
+    g {
         transform: translateY(2048px);
         opacity: 0;
         will-change: transform, opacity;
@@ -721,18 +721,13 @@ h2 {
 
     background-size: cover;
     color: #333;
-    padding: 240px 0 200px 200px;
+
 
 }
 
 #section4 .box {
-    position: relative;
-    align-items: center;
-    max-width: 1600px;
-    left: -30px;
-    top: -240px;
-
-
+    width: 1400px;
+    padding: 10px;
     height: 800px;
     align-items: center;
     background: rgba(255, 255, 255, 0.375);
@@ -743,10 +738,10 @@ h2 {
 
 #section4 .c_5 {
     position: absolute;
-    top: 240px;
+    top: 290px;
+    left: 310px;
 
 
-    transition: linear .4s;
 }
 
 #section4 .c_5>strong {
@@ -793,32 +788,32 @@ h2 {
 
 #section4 .mac {
     position: absolute;
-    top: 165px;
-    right: 130px;
+    top: 170px;
+    right: 260px;
     cursor: pointer;
     z-index: 1;
     width: 900px;
+
 
 }
 
 #section4 .mac .mac2 {
     position: absolute;
-    top: 5px;
 
-    width: 460px;
+    top: 5px;
+    width: 450px;
     height: 600px;
     background: #999;
     border-radius: 10px;
     overflow: hidden;
-    text-align: center;
-    justify-content: center;
+
 }
 
 #section4 .mac .mac3 {
 
     position: absolute;
     top: 5px;
-    right: 50px;
+    right: 40px;
 
     height: 600px;
     background: #999;
@@ -828,7 +823,7 @@ h2 {
 }
 
 #section4 .mac .mac2:hover img {
-    animation: linear mac2 20s infinite;
+    animation: linear mac2 10s infinite;
 }
 
 #section4 .mac .mac3:hover img {
@@ -842,7 +837,7 @@ h2 {
     }
 
     50% {
-        transform: translateY(-1100px);
+        transform: translateY(-290px);
     }
 
     100% {
@@ -899,6 +894,7 @@ h2 {
 #section4 .color03>div:nth-of-type(2) span {
     display: inline-block;
     background: #ed2623;
+    margin-top: 10px;
     width: 15px;
     height: 15px;
     border-radius: 20px;
@@ -910,6 +906,7 @@ h2 {
     width: 15px;
     height: 15px;
     border-radius: 20px;
+    margin-top: 10px;
 }
 
 #section4 .c_3 span:nth-of-type(3) {
@@ -918,7 +915,7 @@ h2 {
 
 #section4 .btn {
     position: absolute;
-    top: 550px;
+    margin-top: 30px;
 
     width: 100px;
 
@@ -933,5 +930,5 @@ h2 {
 
 #section4 .btn span {
     display: block;
-    padding: 15px 0;
+    padding: 5px 0;
 }
