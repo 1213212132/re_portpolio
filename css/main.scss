@@ -1017,6 +1017,79 @@ h2 {
 
 
 
+#section4 .mac_4 {
+    position: absolute;
+    top: 170px;
+    right: 260px;
+    cursor: pointer;
+    z-index: 1;
+    width: 900px;
+}
+
+#section4 .mac_4 .mac2_3 {
+    position: absolute;
+    top: 5px;
+    width: 450px;
+    height: 600px;
+    background: #999;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#section4 .mac_4 .mac3_3 {
+    position: absolute;
+    top: 5px;
+    right: 40px;
+    height: 600px;
+    background: #999;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#section4 .mac_4 .mac2_3:hover img {
+    animation: linear mac2_3 10s infinite;
+}
+
+#section4 .mac_4 .mac3_3:hover img {
+    animation: linear mac3_3 30s infinite;
+}
+
+
+
+
+
+
+@keyframes mac2_3 {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-950px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes mac3_3 {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5800px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+
+
 
 
 
