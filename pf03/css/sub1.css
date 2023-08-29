@@ -1,0 +1,103 @@
+.sub01_sec {
+    position: relative;
+    margin-top: 20rem;
+}
+
+.blue_box {
+    display: block;
+    background-color: rgb(28, 171, 226);
+    color: rgb(255, 255, 255);
+    height: 200px;
+}
+
+.blue_box h2 {
+    display: inline-block;
+    line-height: 1.56;
+    letter-spacing: -0.8px;
+    color: rgb(255, 255, 255);
+    font-size: 48px;
+    font-weight: 700 !important;
+    margin-top: 30rem;
+
+}
+
+
+
+.blue_box p {
+    line-height: 1.6;
+    letter-spacing: -1.2px;
+    margin-top: 6px;
+    font-size: 20px;
+    margin-left: 3px;
+}
+
+
+/* tap*/
+
+.help_tap {
+    position: relative;
+    padding-top: 50rem;
+    padding-bottom: 50rem;
+}
+
+
+
+.tap_menu .tap_on .bottom {
+    height: 0;
+    overflow: hidden;
+}
+
+.tap_menu .tap_on .bottom.on {
+    height: auto;
+}
+
+.tap_menu .tap_box {
+    position: relative;
+    text-align: center;
+    bottom: 30rem;
+    padding-bottom: 25rem;
+    cursor: pointer;
+}
+
+
+.tap_menu .tap_box .inner2 {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10rem;
+    margin-top: 30rem;
+}
+
+.tap_menu .tap_box .top {
+    padding: 0 26px;
+    height: 100%;
+    display: block;
+    padding: 15rem 20rem;
+}
+
+.tap_menu .tap_box .top.on {
+    border-radius: 50rem;
+    background: rgb(28, 171, 226);
+    color: #ffffff;
+
+}
+
+.tap_menu .tap_box .inner2 .top {
+    font-size: 16px;
+
+
+
+}
+
+
+.tap_on .inner figure img {
+
+    width: 100%;
+
+    border: 1px solid #dddddd;
+    padding: 20rem;
+    border-radius: 10rem 10rem 0 0;
+
+    margin-bottom: 20rem;
+
+}
