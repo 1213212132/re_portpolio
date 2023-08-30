@@ -24,59 +24,11 @@ body.fp-viewing-3 {
   background-position: center 30%;
 }
 
-.one,
-.three {
-  background: linear-gradient(-45deg, transparent 25%, rgba(154, 198, 240, 0.6) 25%, rgba(154, 198, 240, 0.6) 75%, transparent 75%, transparent 100%);
-}
-
-.two,
-.four {
-  background: linear-gradient(45deg, transparent 25%, rgba(154, 198, 240, 0.6) 25%, rgba(154, 198, 240, 0.6) 75%, transparent 75%, transparent 100%);
-  text-align: right;
-}
-
-h1,
-h2 {
-  color: #fff;
-  font-family: "Roboto", sans-serif;
-  font-size: 80px;
-  height: 90px;
-  line-height: 3.5;
-  max-width: 830px;
-  padding: 0 15px;
-  margin: 0 auto;
-  overflow: hidden;
-  transition: line-height 0.85s cubic-bezier(0.77, 0, 0.175, 1);
-  font-weight: 900;
-  -webkit-text-stroke: 1.5px #fff;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  background-repeat: no-repeat;
-  background-image: linear-gradient(0deg, #fff 0%, #fff 50%, transparent 50%);
-  background-position: 100% 100%;
-  background-size: 100% 0%;
-}
-
-h1 {
-  font-weight: 300;
-  transition-delay: 0.3s;
-}
-
-h2 {
-  font-weight: 500;
-  transition-delay: 0.8s;
-}
-
-.section.active h1,
-.section.active h2 {
-  line-height: 1;
-}
-
 /*네비바*/
 nav {
   position: fixed;
   top: 50%;
-  right: 2px;
+  right: 2rem;
   transform: translateY(-50%);
   z-index: 999;
   font-size: 0;
@@ -91,144 +43,31 @@ nav li a {
   text-indent: -999px;
   width: 4rem;
   line-height: 1rem;
-  padding: 5px 0;
 }
 
 nav li:after {
   content: "";
   display: block;
   width: 1rem;
-  height: 1rem;
-  background: #356cd3;
+  height: 0.5rem;
+  background: #1d4e76;
   position: absolute;
   top: 50%;
   left: 0;
+  transform: translateY(-50%) skew(20deg);
   transition: 1s;
   z-index: -1;
 }
 
 nav li.on:after {
-  background: #fff;
-}
-
-/*메뉴링크*/
-.util {
-  position: fixed;
-  top: 30px;
-  right: 80px;
-  width: 32px;
-  height: 24px;
-  cursor: pointer;
-  z-index: 1000;
-}
-
-.util button {
-  background: transparent;
-  border: none;
-  outline: none;
-}
-
-.util span {
-  font-size: 0;
-}
-
-.util button::before {
-  content: "";
-  position: absolute;
-  inset: 0 0 auto 0;
-  height: 4px;
-  background: #fff;
-  border-radius: 2px;
-}
-
-.util button::after {
-  content: "";
-  position: absolute;
-  inset: auto 0 0 0;
-  height: 4px;
-  background: #fff;
-  border-radius: 2px;
-}
-
-.util.on button::before,
-.util.on button::after {
-  display: none;
-}
-
-.util span::before {
-  content: "";
-  position: absolute;
-  inset: 50% 0 auto 0;
-  height: 4px;
-  background: #fff;
-  transform: translate(0, -50%);
-  border-radius: 2px;
-}
-
-.util.on span::before {
-  transform: translate(0, -50%) rotate(45deg);
-}
-
-.util span::after {
-  content: "";
-  position: absolute;
-  inset: 50% 0 auto 0;
-  height: 4px;
-  background: #fff;
-  transform: translate(0, -50%);
-  border-radius: 2px;
-}
-
-.util.on span::after {
-  transform: translate(0, -50%) rotate(-45deg);
-}
-
-.cover {
-  position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
-  height: 100vh;
-  background: lightsteelblue;
-  z-index: 999;
-  display: none;
+  background: #f4c367;
 }
 
-.cover.on {
-  display: block;
-}
-
-.cover > ul {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.cover > ul a {
-  display: block;
-  font-family: "Roboto";
-  font-size: 100px;
-  font-weight: 900;
-  line-height: 140px;
-  -webkit-text-stroke: 1.5px #fff;
-  -webkit-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  background-repeat: no-repeat;
-  transition: background-size 0.9s cubic-bezier(0, 0, 0, 0.7);
-  background-image: linear-gradient(0deg, #fff 0%, #fff 50%, transparent 50%);
-  background-position: 100% 100%;
-  background-size: 100% 0%;
-}
-
-.cover > ul a:hover {
-  background-size: 100% 200%;
-}
-
-/**/
 .intro p {
   padding: 1rem 2rem 0 0;
   overflow: hidden;
+  font-family: "양진체";
   line-height: 10rem;
   text-align: right;
   font-size: 8rem;
@@ -266,7 +105,9 @@ nav li.on:after {
   --posFlip: 0;
 }
 
+body,
 .seaLevel {
+  font-family: "Open Sans", sans-serif;
   background-color: lightblue;
   overflow: hidden;
 }
@@ -464,6 +305,46 @@ nav li.on:after {
   }
 }
 /*물고기 끝*/
+.one,
+.three {
+  background: linear-gradient(-45deg, transparent 25%, rgba(154, 198, 240, 0.6) 25%, rgba(154, 198, 240, 0.6) 75%, transparent 75%, transparent 100%);
+}
+
+.two,
+.four {
+  background: linear-gradient(45deg, transparent 25%, rgba(154, 198, 240, 0.6) 25%, rgba(154, 198, 240, 0.6) 75%, transparent 75%, transparent 100%);
+  text-align: right;
+}
+
+h1,
+h2 {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-size: 66px;
+  height: 64px;
+  line-height: 3.5;
+  max-width: 830px;
+  padding: 0 15px;
+  margin: 0 auto;
+  overflow: hidden;
+  transition: line-height 0.85s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+h1 {
+  font-weight: 300;
+  transition-delay: 0.3s;
+}
+
+h2 {
+  font-weight: 500;
+  transition-delay: 0.8s;
+}
+
+.section.active h1,
+.section.active h2 {
+  line-height: 1;
+}
+
 .hero {
   overflow: hidden;
   position: absolute;
@@ -712,68 +593,7 @@ nav li.on:after {
   }
 }
 /**/
-/*wave*/
-.waves {
-  position: absolute;
-  width: 100%;
-  height: 20vh;
-  margin-bottom: -7px;
-  left: 0;
-  bottom: 0;
-  /*Fix for safari gap*/
-  min-height: 100px;
-  max-height: 150px;
-}
-
-/* Animation */
-.parallax > use {
-  animation: move-forever 25s cubic-bezier(0.55, 0.5, 0.45, 0.5) infinite;
-}
-
-.parallax > use:nth-child(1) {
-  animation-delay: -2s;
-  animation-duration: 7s;
-}
-
-.parallax > use:nth-child(2) {
-  animation-delay: -3s;
-  animation-duration: 10s;
-}
-
-.parallax > use:nth-child(3) {
-  animation-delay: -4s;
-  animation-duration: 13s;
-}
-
-.parallax > use:nth-child(4) {
-  animation-delay: -5s;
-  animation-duration: 20s;
-}
-
-@keyframes move-forever {
-  0% {
-    transform: translate3d(-90px, 0, 0);
-    opacity: 0.3;
-  }
-  100% {
-    transform: translate3d(85px, 0, 0);
-    opacity: 0.8;
-  }
-}
-/*Shrinking for mobile*/
-@media (max-width: 768px) {
-  .waves {
-    height: 40px;
-    min-height: 40px;
-  }
-  .content {
-    height: 30vh;
-  }
-  h1 {
-    font-size: 24px;
-  }
-}
-/**/
+/*상상*/
 #section4 {
   background: url(../images/sky-6544632_1920.jpg) no-repeat center 0%/cover;
   position: relative;
@@ -784,9 +604,9 @@ nav li.on:after {
 }
 
 #section4 .box {
-  width: 1200px;
+  width: 1400px;
   padding: 10px;
-  height: 600px;
+  height: 800px;
   align-items: center;
   background: rgba(255, 255, 255, 0.375);
   box-shadow: 0 0.75rem 2rem 0 rgba(0, 0, 0, 0.1);
@@ -796,40 +616,39 @@ nav li.on:after {
 
 #section4 .content {
   position: absolute;
-  left: 450px;
-  top: 300px;
+  top: 290px;
+  left: 310px;
 }
 
 #section4 .content > strong {
   font-size: 60px;
   position: absolute;
   width: 500px;
-  top: -80px;
+  top: -110px;
+  color: rgba(6, 140, 250, 0.822);
 }
 
 #section4 .content h3 {
   color: #000;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 700;
   padding: 20px 0 0 0;
   margin-bottom: 15px;
 }
 
 #section4 .content span {
-  line-height: 30px;
-  font-weight: 500;
-  font-size: 18px;
+  line-height: 40px;
 }
 
 #section4 .content p {
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 300;
 }
 
 #section4 .mac {
   position: absolute;
-  top: 300px;
-  right: 200px;
+  top: 170px;
+  right: 260px;
   cursor: pointer;
   z-index: 1;
   width: 900px;
@@ -839,7 +658,7 @@ nav li.on:after {
   position: absolute;
   top: 5px;
   width: 450px;
-  height: 400px;
+  height: 600px;
   background: #999;
   border-radius: 10px;
   overflow: hidden;
@@ -848,10 +667,8 @@ nav li.on:after {
 #section4 .mac .mac3 {
   position: absolute;
   top: 5px;
-  right: 240px;
-  top: 5px;
-  width: 200px;
-  height: 400px;
+  right: 40px;
+  height: 600px;
   background: #999;
   border-radius: 10px;
   overflow: hidden;
@@ -870,7 +687,7 @@ nav li.on:after {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-490px);
+    transform: translateY(-290px);
   }
   100% {
     transform: translateY(0);
@@ -881,7 +698,7 @@ nav li.on:after {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-950px);
+    transform: translateY(-1950px);
   }
   100% {
     transform: translateY(0);
@@ -889,8 +706,8 @@ nav li.on:after {
 }
 #section4 .mac_2 {
   position: absolute;
-  top: 290px;
-  right: 200px;
+  top: 170px;
+  right: 260px;
   cursor: pointer;
   z-index: 1;
   width: 900px;
@@ -900,7 +717,7 @@ nav li.on:after {
   position: absolute;
   top: 5px;
   width: 450px;
-  height: 400px;
+  height: 600px;
   background: #999;
   border-radius: 10px;
   overflow: hidden;
@@ -909,10 +726,8 @@ nav li.on:after {
 #section4 .mac_2 .mac3_1 {
   position: absolute;
   top: 5px;
-  right: 240px;
-  top: 5px;
-  width: 200px;
-  height: 400px;
+  right: 40px;
+  height: 600px;
   background: #999;
   border-radius: 10px;
   overflow: hidden;
@@ -931,7 +746,7 @@ nav li.on:after {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-450px);
+    transform: translateY(-240px);
   }
   100% {
     transform: translateY(0);
@@ -942,7 +757,7 @@ nav li.on:after {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-1800px);
+    transform: translateY(-3300px);
   }
   100% {
     transform: translateY(0);
@@ -950,8 +765,8 @@ nav li.on:after {
 }
 #section4 .mac_3 {
   position: absolute;
-  top: 290px;
-  right: 200px;
+  top: 170px;
+  right: 260px;
   cursor: pointer;
   z-index: 1;
   width: 900px;
@@ -961,7 +776,7 @@ nav li.on:after {
   position: absolute;
   top: 5px;
   width: 450px;
-  height: 400px;
+  height: 600px;
   background: #999;
   border-radius: 10px;
   overflow: hidden;
@@ -970,10 +785,8 @@ nav li.on:after {
 #section4 .mac_3 .mac3_2 {
   position: absolute;
   top: 5px;
-  right: 240px;
-  top: 5px;
-  width: 200px;
-  height: 400px;
+  right: 40px;
+  height: 600px;
   background: #999;
   border-radius: 10px;
   overflow: hidden;
@@ -992,7 +805,7 @@ nav li.on:after {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-610px);
+    transform: translateY(-410px);
   }
   100% {
     transform: translateY(0);
@@ -1003,7 +816,7 @@ nav li.on:after {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-1900px);
+    transform: translateY(-3800px);
   }
   100% {
     transform: translateY(0);
@@ -1011,17 +824,18 @@ nav li.on:after {
 }
 #section4 .mac_4 {
   position: absolute;
-  top: 320px;
-  right: 200px;
+  top: 170px;
+  right: 260px;
   cursor: pointer;
   z-index: 1;
   width: 900px;
 }
 
 #section4 .mac_4 .mac2_3 {
+  position: absolute;
   top: 5px;
   width: 450px;
-  height: 400px;
+  height: 600px;
   background: #999;
   border-radius: 10px;
   overflow: hidden;
@@ -1029,10 +843,9 @@ nav li.on:after {
 
 #section4 .mac_4 .mac3_3 {
   position: absolute;
-  top: 1px;
-  right: 240px;
-  width: 200px;
-  height: 400px;
+  top: 5px;
+  right: 40px;
+  height: 600px;
   background: #999;
   border-radius: 10px;
   overflow: hidden;
@@ -1051,7 +864,7 @@ nav li.on:after {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-1100px);
+    transform: translateY(-950px);
   }
   100% {
     transform: translateY(0);
@@ -1062,68 +875,7 @@ nav li.on:after {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(-3100px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-#section4 .mac_5 {
-  position: absolute;
-  top: 290px;
-  right: 200px;
-  cursor: pointer;
-  z-index: 1;
-  width: 900px;
-}
-
-#section4 .mac_5 .mac2_4 {
-  position: absolute;
-  top: 5px;
-  width: 450px;
-  height: 400px;
-  background: #999;
-  border-radius: 10px;
-  overflow: hidden;
-}
-
-#section4 .mac_5 .mac3_4 {
-  position: absolute;
-  top: 5px;
-  right: 240px;
-  top: 5px;
-  width: 200px;
-  height: 400px;
-  background: #999;
-  border-radius: 10px;
-  overflow: hidden;
-}
-
-#section4 .mac_5 .mac2_4:hover img {
-  animation: linear mac2_4 10s infinite;
-}
-
-#section4 .mac_5 .mac3_4:hover img {
-  animation: linear mac3_4 30s infinite;
-}
-
-@keyframes mac2_4 {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-235px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-@keyframes mac3_4 {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-1600px);
+    transform: translateY(-5800px);
   }
   100% {
     transform: translateY(0);
@@ -1158,90 +910,4 @@ nav li.on:after {
 
 #section4 .c_3 span:nth-of-type(3) {
   float: right;
-}
-
-/* 자기소개 */
-/* 프로필 */
-.profile {
-  width: 280px;
-  position: relative;
-  top: -40px;
-  left: 320px;
-}
-
-.profile-img {
-  width: 260px;
-  height: 260px;
-  background: #eee;
-  border-radius: 50%;
-  margin: 0 auto;
-  margin-bottom: 50px;
-  position: relative;
-}
-
-.profile-img:after {
-  content: "";
-  width: 300px;
-  height: 300px;
-  border: 1px solid #eee;
-  border-radius: 50%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-/* 프로필 사진 */
-.profile-img > figure {
-  width: 260px;
-  height: 260px;
-  border-radius: 50%;
-  margin: 0 auto;
-  margin-bottom: 50px;
-  position: absolute;
-  overflow: hidden;
-}
-
-.profile-img > figure img {
-  width: 300px;
-  position: relative;
-  top: -30px;
-  left: -20px;
-}
-
-/* 프로필 내용 */
-.profile dl span {
-  letter-spacing: 0.2em;
-  display: block;
-  font-size: 22px;
-  font-weight: 700;
-  color: #1b70e0;
-  padding-bottom: 55px;
-  position: relative;
-}
-
-.profile dl span:after {
-  content: "";
-  width: 280px;
-  height: 1px;
-  background: #83afe9;
-  position: absolute;
-  top: 45px;
-  left: 0;
-}
-
-.profile dt {
-  font-family: "fugaz";
-  display: block;
-  color: #333;
-  font-weight: 500;
-  position: relative;
-}
-
-.profile dd {
-  font-size: 15px;
-  color: #666;
-  position: relative;
-  top: -20px;
-  left: 125px;
 }/*# sourceMappingURL=main.css.map */
