@@ -33,20 +33,79 @@ body {
     }
 
 
+
 }
+
+.one,
+.three {
+    background: linear-gradient(-45deg, transparent 25%, rgba(154, 198, 240, 0.6) 25%, rgba(154, 198, 240, 0.6) 75%, transparent 75%, transparent 100%);
+}
+
+.two,
+.four {
+    background: linear-gradient(45deg, transparent 25%, rgba(154, 198, 240, 0.6) 25%, rgba(154, 198, 240, 0.6) 75%, transparent 75%, transparent 100%);
+    text-align: right;
+}
+
+h1,
+h2 {
+    color: $text--primary;
+    font-family: 'Roboto', sans-serif;
+    font-size: 80px;
+    height: 90px;
+    line-height: 3.5;
+    max-width: 830px;
+    padding: 0 15px;
+    margin: 0 auto;
+    overflow: hidden;
+    transition: line-height .85s $easeInOutQuart;
+    font-weight: 900;
+
+    -webkit-text-stroke: 1.5px #fff;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(0deg, #fff 0%, #fff 50%, transparent 50%);
+    background-position: 100% 100%;
+    background-size: 100% 0%;
+}
+
+
+
+h1 {
+    font-weight: 300;
+    transition-delay: .3s;
+}
+
+h2 {
+    font-weight: 500;
+    transition-delay: .8s;
+}
+
+.section.active {
+
+    h1,
+    h2 {
+        line-height: 1;
+    }
+}
+
 
 /*네비바*/
 nav {
     position: fixed;
     top: 50%;
-    right: 2rem;
+    right: 2px;
     transform: translateY(-50%);
     z-index: 999;
     font-size: 0;
 }
 
+
+
 nav li {
     position: relative;
+
 }
 
 nav li a {
@@ -54,26 +113,32 @@ nav li a {
     text-indent: -999px;
     width: 4rem;
     line-height: 1rem;
+    padding: 5px 0;
 }
 
 nav li:after {
     content: "";
     display: block;
+
     width: 1rem;
-    height: 0.5rem;
-    background: #1d4e76;
+    height: 1rem;
+    background: #356cd3;
+
     position: absolute;
     top: 50%;
     left: 0;
-    transform: translateY(-50%) skew(20deg);
     transition: 1s;
     z-index: -1;
 }
 
 nav li.on:after {
-    width: 100%;
-    background: #f4c367;
+
+    background: #fff;
 }
+
+
+
+
 
 
 /*메뉴링크*/
@@ -179,11 +244,23 @@ nav li.on:after {
 
 .cover>ul a {
     display: block;
-    line-height: 1.4;
-    color: #fff;
-    font-size: 40px;
+    font-family: 'Roboto';
+    font-size: 100px;
+    font-weight: 900;
+    line-height: 140px;
+    -webkit-text-stroke: 1.5px #fff;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-repeat: no-repeat;
+    transition: background-size .9s cubic-bezier(0, 0, 0, 0.7);
+    background-image: linear-gradient(0deg, #fff 0%, #fff 50%, transparent 50%);
+    background-position: 100% 100%;
+    background-size: 100% 0%;
 }
 
+.cover>ul a:hover {
+    background-size: 100% 200%;
+}
 
 /**/
 
@@ -230,7 +307,7 @@ nav li.on:after {
 
 /*물고기*/
 :root {
-    --coilSize: 14\px;
+    --coilSize: 14px;
     --delayCount: 40ms;
     --scaleMe: 1;
 
@@ -238,9 +315,9 @@ nav li.on:after {
     --posFlip: 0;
 }
 
-body,
+
 .seaLevel {
-    font-family: "Open Sans", sans-serif;
+
     background-color: lightblue;
     overflow: hidden;
 }
@@ -447,48 +524,8 @@ body,
 
 /*물고기 끝*/
 
-.one,
-.three {
-    background: linear-gradient(-45deg, transparent 25%, rgba(154, 198, 240, 0.6) 25%, rgba(154, 198, 240, 0.6) 75%, transparent 75%, transparent 100%);
-}
 
-.two,
-.four {
-    background: linear-gradient(45deg, transparent 25%, rgba(154, 198, 240, 0.6) 25%, rgba(154, 198, 240, 0.6) 75%, transparent 75%, transparent 100%);
-    text-align: right;
-}
 
-h1,
-h2 {
-    color: $text--primary;
-    font-family: 'Roboto', sans-serif;
-    font-size: 66px;
-    height: 64px;
-    line-height: 3.5;
-    max-width: 830px;
-    padding: 0 15px;
-    margin: 0 auto;
-    overflow: hidden;
-    transition: line-height .85s $easeInOutQuart;
-}
-
-h1 {
-    font-weight: 300;
-    transition-delay: .3s;
-}
-
-h2 {
-    font-weight: 500;
-    transition-delay: .8s;
-}
-
-.section.active {
-
-    h1,
-    h2 {
-        line-height: 1;
-    }
-}
 
 
 .hero {
@@ -946,7 +983,7 @@ h2 {
 
 #section4 .content h3 {
     color: #000;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 700;
     padding: 20px 0 0 0;
     margin-bottom: 15px;
@@ -956,13 +993,15 @@ h2 {
 
 
 #section4 .content span {
-    line-height: 40px;
+    line-height: 30px;
+    font-weight: 500;
+    font-size: 18px;
 
 
 }
 
 #section4 .content p {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 300;
 
 }
@@ -1025,7 +1064,7 @@ h2 {
     }
 
     50% {
-        transform: translateY(-290px);
+        transform: translateY(-490px);
     }
 
     100% {
@@ -1039,7 +1078,7 @@ h2 {
     }
 
     50% {
-        transform: translateY(-1950px);
+        transform: translateY(-950px);
     }
 
     100% {
@@ -1102,7 +1141,7 @@ h2 {
     }
 
     50% {
-        transform: translateY(-240px);
+        transform: translateY(-450px);
     }
 
     100% {
@@ -1116,7 +1155,7 @@ h2 {
     }
 
     50% {
-        transform: translateY(-3300px);
+        transform: translateY(-1800px);
     }
 
     100% {
@@ -1128,7 +1167,7 @@ h2 {
 
 #section4 .mac_3 {
     position: absolute;
-    top: 220px;
+    top: 290px;
     right: 200px;
     cursor: pointer;
     z-index: 1;
@@ -1178,7 +1217,7 @@ h2 {
     }
 
     50% {
-        transform: translateY(-410px);
+        transform: translateY(-610px);
     }
 
     100% {
@@ -1192,7 +1231,7 @@ h2 {
     }
 
     50% {
-        transform: translateY(-3800px);
+        transform: translateY(-1900px);
     }
 
     100% {
@@ -1208,18 +1247,17 @@ h2 {
 
 #section4 .mac_4 {
     position: absolute;
-    top: 170px;
-    right: 260px;
+    top: 320px;
+    right: 200px;
     cursor: pointer;
     z-index: 1;
     width: 900px;
 }
 
 #section4 .mac_4 .mac2_3 {
-    position: absolute;
     top: 5px;
     width: 450px;
-    height: 600px;
+    height: 400px;
     background: #999;
     border-radius: 10px;
     overflow: hidden;
@@ -1227,9 +1265,11 @@ h2 {
 
 #section4 .mac_4 .mac3_3 {
     position: absolute;
-    top: 5px;
-    right: 40px;
-    height: 600px;
+    top: 1px;
+    right: 240px;
+
+    width: 200px;
+    height: 400px;
     background: #999;
     border-radius: 10px;
     overflow: hidden;
@@ -1254,7 +1294,7 @@ h2 {
     }
 
     50% {
-        transform: translateY(-950px);
+        transform: translateY(-1100px);
     }
 
     100% {
@@ -1268,7 +1308,7 @@ h2 {
     }
 
     50% {
-        transform: translateY(-5800px);
+        transform: translateY(-3100px);
     }
 
     100% {
@@ -1283,8 +1323,8 @@ h2 {
 
 #section4 .mac_5 {
     position: absolute;
-    top: 170px;
-    right: 260px;
+    top: 290px;
+    right: 200px;
     cursor: pointer;
     z-index: 1;
     width: 900px;
@@ -1292,9 +1332,10 @@ h2 {
 
 #section4 .mac_5 .mac2_4 {
     position: absolute;
+
     top: 5px;
     width: 450px;
-    height: 600px;
+    height: 400px;
     background: #999;
     border-radius: 10px;
     overflow: hidden;
@@ -1303,8 +1344,10 @@ h2 {
 #section4 .mac_5 .mac3_4 {
     position: absolute;
     top: 5px;
-    right: 40px;
-    height: 600px;
+    right: 240px;
+    top: 5px;
+    width: 200px;
+    height: 400px;
     background: #999;
     border-radius: 10px;
     overflow: hidden;
@@ -1329,7 +1372,7 @@ h2 {
     }
 
     50% {
-        transform: translateY(-55px);
+        transform: translateY(-235px);
     }
 
     100% {
@@ -1343,7 +1386,7 @@ h2 {
     }
 
     50% {
-        transform: translateY(-3050px);
+        transform: translateY(-1600px);
     }
 
     100% {
@@ -1393,8 +1436,92 @@ h2 {
     float: right;
 }
 
-#section4 .btn {}
+/* 자기소개 */
 
-#section4.on .btn {}
+/* 프로필 */
+.profile {
+    width: 280px;
+    position: relative;
+    top: -40px;
+    left: 320px;
+}
 
-#section4 .btn span {}
+.profile-img {
+    width: 260px;
+    height: 260px;
+    background: #eee;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    position: relative;
+}
+
+.profile-img:after {
+    content: "";
+    width: 300px;
+    height: 300px;
+    border: 1px solid #eee;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* 프로필 사진 */
+.profile-img>figure {
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    position: absolute;
+    overflow: hidden;
+}
+
+.profile-img>figure img {
+    width: 300px;
+    position: relative;
+    top: -30px;
+    left: -20px;
+}
+
+
+
+
+/* 프로필 내용 */
+.profile dl span {
+    letter-spacing: 0.2em;
+    display: block;
+    font-size: 22px;
+    font-weight: 700;
+    color: #1b70e0;
+    padding-bottom: 55px;
+    position: relative;
+}
+
+.profile dl span:after {
+    content: "";
+    width: 280px;
+    height: 1px;
+    background: #83afe9;
+    position: absolute;
+    top: 45px;
+    left: 0;
+}
+
+.profile dt {
+    font-family: "fugaz";
+    display: block;
+    color: #333;
+    font-weight: 500;
+    position: relative;
+}
+
+.profile dd {
+    font-size: 15px;
+    color: #666;
+    position: relative;
+    top: -20px;
+    left: 125px;
+}
