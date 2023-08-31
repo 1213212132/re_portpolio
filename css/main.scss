@@ -990,7 +990,7 @@ nav li.on:after {
     position: absolute;
 
     left: 450px;
-    top: 330px;
+    top: 300px;
 
 }
 
@@ -999,7 +999,7 @@ nav li.on:after {
     position: absolute;
     width: 500px;
 
-    top: -80px;
+    top: -30px;
 
 }
 
@@ -1010,7 +1010,7 @@ nav li.on:after {
     color: #000;
     font-size: 24px;
     font-weight: 700;
-    padding: 20px 0 0 0;
+    padding: 40px 0 0 0;
     margin-bottom: 15px;
 
 }
@@ -1418,6 +1418,88 @@ nav li.on:after {
         transform: translateY(0);
     }
 }
+
+
+
+
+
+
+#section4 .mac_6 {
+    position: absolute;
+    top: 260px;
+    right: 200px;
+    cursor: pointer;
+    z-index: 1;
+    width: 900px;
+}
+
+#section4 .mac_6 .mac2_5 {
+    position: absolute;
+
+    top: 5px;
+    width: 450px;
+    height: 400px;
+    background: #999;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#section4 .mac_6 .mac3_5 {
+    position: absolute;
+    top: 5px;
+    right: 240px;
+    top: 5px;
+    width: 200px;
+    height: 400px;
+    background: #999;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#section4 .mac_6 .mac2_5:hover img {
+    animation: linear mac2_5 10s infinite;
+}
+
+#section4 .mac_6 .mac3_5:hover img {
+    animation: linear mac3_5 30s infinite;
+}
+
+
+
+
+
+
+@keyframes mac2_5 {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-85px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes mac3_5 {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-1400px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+
+
 
 
 
