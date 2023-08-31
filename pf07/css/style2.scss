@@ -1,0 +1,13 @@
+@import './mixins';
+
+.main {
+    font-size: 100px;
+
+    @include responsive(pc) {
+        font-size: 200px;
+    }
+
+    @include responsive(sp) {
+        font-size: 50px;
+    }
+}
